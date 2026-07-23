@@ -69,7 +69,7 @@ export default function Home() {
               playsInline 
               style={{ y: videoY }}
             >
-              <source src="https://videos.pexels.com/video-files/3571264/3571264-hd_1920_1080_24fps.mp4" type="video/mp4" />
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-girl-in-a-fashion-photoshoot-4228-large.mp4" type="video/mp4" />
             </motion.video>
             <div id="vid-top">Styloom Studio</div>
             <div id="vid-bot">
