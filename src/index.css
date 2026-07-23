@@ -318,7 +318,7 @@ section { padding:100px 60px; overflow:hidden; }
 #hero-left {
   flex:0 0 52%; display:flex; flex-direction:column;
   justify-content:space-between;
-  padding:calc(var(--hdr-h) + 12px) 52px 48px;
+  padding:var(--hdr-h) 52px 48px;
   position:relative; z-index:2;
 }
 #hero-meta {
@@ -713,7 +713,7 @@ body.hero-in #hero-scroll { opacity:1; }
   .page-banner { padding:calc(var(--hdr-h) + 40px) 22px 40px; min-height:240px; }
 
   #hero { flex-direction:column-reverse; height:auto; min-height:100svh; }
-  #hero-left { flex:none; padding:calc(var(--hdr-h) + 4px) 22px 36px; }
+  #hero-left { flex:none; padding:var(--hdr-h) 22px 36px; }
   #hero-right { flex:none; height:52vw; min-height:240px; padding:0; }
   #hero-ghost, #hero-scroll { display:none; }
   #hero-bottom { flex-wrap:wrap; gap:22px; }
