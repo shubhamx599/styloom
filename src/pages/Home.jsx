@@ -149,9 +149,9 @@ export default function Home() {
       {/* MANIFESTO */}
       <Reveal id="manifesto">
         <blockquote>
-          "Fashion is not what you wear.<br />
+          Fashion is not what you wear.<br />
           It is <em>how the world reads you</em><br />
-          before you speak."
+          before you speak.
         </blockquote>
         <cite>— Styloom Studio</cite>
       </Reveal>

@@ -1,7 +1,11 @@
-# Styloom Studio — Archival Portfolio
+# Styloom
 
 **Styloom** is a premium, high-performance web application. Designed as a conceptual fashion styling studio, it showcases "past work", design philosophy, and campaigns. It is built as a complete, static showcase piece delivering an exceptionally high-end user experience.
 
+## Links
+
+- **Live Demo:** [https://styloom.vercel.app](https://styloom.vercel.app)
+- **GitHub Repository:** [https://github.com/shubhamx599/styloom](https://github.com/shubhamx599/styloom)
 ## Tech Stack
 
 This project was built focusing on top-tier performance, cinematic animations, and a seamless developer experience:
