@@ -229,7 +229,7 @@ body.cur-hover #cursor-ring { width:44px; height:44px; border-color:var(--accent
   min-height:300px; background:var(--s0);
   display:flex; align-items:flex-end;
   padding:0 60px 52px;
-  padding-top:var(--hdr-h);
+  padding-top:calc(var(--hdr-h) + 40px);
   position:relative; overflow:hidden;
 }
 .page-banner::before {
@@ -710,7 +710,7 @@ body.hero-in #hero-scroll { opacity:1; }
   #nav-hamburger { display:flex; }
 
   section { padding:64px 22px; }
-  .page-banner { padding:var(--hdr-h) 22px 40px; min-height:240px; }
+  .page-banner { padding:calc(var(--hdr-h) + 40px) 22px 40px; min-height:240px; }
 
   #hero { flex-direction:column-reverse; height:auto; min-height:100svh; }
   #hero-left { flex:none; padding:calc(var(--hdr-h) + 18px) 22px 36px; }
@@ -750,7 +750,7 @@ body.hero-in #hero-scroll { opacity:1; }
    ============================================= */
 #article-hero {
   background: var(--s0); padding: 0 60px 60px;
-  padding-top: var(--hdr-h); position: relative; overflow: hidden;
+  padding-top: calc(var(--hdr-h) + 40px); position: relative; overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
 #article-hero::before {
@@ -868,7 +868,7 @@ body.hero-in #hero-scroll { opacity:1; }
 .art-nav a:hover { color: var(--accent); }
 
 @media (max-width: 768px) {
-  #article-hero { padding: var(--hdr-h) 22px 44px; }
+  #article-hero { padding: calc(var(--hdr-h) + 40px) 22px 44px; }
   .art-eyebrow { padding-top: 32px; flex-wrap: wrap; }
   #article-body { padding: 52px 22px; grid-template-columns: 1fr; }
   #article-body > * { grid-column: 1; }
