@@ -288,7 +288,7 @@ section { padding:100px 60px; overflow:hidden; }
    HOME â€” HERO
    ============================================= */
 #hero {
-  height:100vh; min-height:620px; display:flex;
+  min-height:max(100vh, 620px); display:flex;
   background:var(--s0); position:relative; overflow:hidden;
   --lx:50%; --ly:50%;
 }
@@ -678,7 +678,7 @@ body.hero-in #hero-scroll { opacity:1; }
   #nav-hamburger { display:flex; }
 
   section { padding:64px 22px; }
-  .page-banner { padding:0 22px 40px; min-height:240px; }
+  .page-banner { padding:var(--hdr-h) 22px 40px; min-height:240px; }
 
   #hero { flex-direction:column-reverse; height:auto; min-height:100svh; }
   #hero-left { flex:none; padding:calc(var(--hdr-h) + 18px) 22px 36px; }
@@ -836,7 +836,7 @@ body.hero-in #hero-scroll { opacity:1; }
 .art-nav a:hover { color: var(--accent); }
 
 @media (max-width: 768px) {
-  #article-hero { padding: 0 22px 44px; }
+  #article-hero { padding: var(--hdr-h) 22px 44px; }
   .art-eyebrow { padding-top: 32px; flex-wrap: wrap; }
   #article-body { padding: 52px 22px; grid-template-columns: 1fr; }
   #article-body > * { grid-column: 1; }
