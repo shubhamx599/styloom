@@ -1,16 +1,55 @@
-# React + Vite
+# Styloom — Fashion Intelligence
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Styloom** is a premium, high-performance web application designed for fashion intelligence, trend forecasting, and editorial analysis. Built for those who want to understand the season before it happens.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project was built focusing on top-tier performance, cinematic animations, and a seamless developer experience:
 
-## React Compiler
+- **Framework:** React + Vite
+- **Routing:** React Router v7
+- **Styling:** Tailwind CSS v4 + Vanilla CSS Hybrid
+- **Animations:** Framer Motion (Page Transitions & Reveals) & GSAP (Custom Cursor Performance)
+- **Deployment:** Ready for Vercel (SPA routing configured)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- **Fluid Page Transitions:** Achieved via Framer Motion's `AnimatePresence`.
+- **Cinematic Scroll Reveals:** Custom directional reveal components based on intersection observers and Framer Motion.
+- **Custom Cursor:** High-performance, GSAP-powered custom cursor that avoids React state bottlenecks.
+- **Dark/Light Mode:** Seamless theme toggling with custom CSS variable mapping.
+- **Responsive Grid System:** A bespoke editorial layout utilizing CSS grid and asymmetric tile designs.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Getting Started
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shubhamx599/styloom.git
+   cd styloom
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Legacy Files
+The original HTML/CSS version of this project is preserved in the `_legacy` folder for historical reference and asset fallback.
+
+## License
+© 2026 Styloom. All rights reserved.
