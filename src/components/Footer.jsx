@@ -9,15 +9,15 @@ export default function Footer() {
             <div className="footer-diamond"></div>
             <span className="footer-wordmark">Styloom</span>
           </div>
-          <p className="footer-tagline">The shape of what's next. · Issue 01 · 2026</p>
+          <p className="footer-tagline">Timeless aesthetic direction.</p>
         </div>
         <div className="footer-cols">
           <div className="footer-col">
             <h4>Platform</h4>
             <Link to="/">Home</Link>
-            <Link to="/collections">The Season</Link>
-            <Link to="/runway">Runway</Link>
-            <Link to="/journal">Journal</Link>
+            <Link to="/collections">Collections</Link>
+            <Link to="/runway">Campaigns</Link>
+            <Link to="/journal">Process</Link>
           </div>
           <div className="footer-col">
             <h4>More</h4>
@@ -34,8 +34,8 @@ export default function Footer() {
       </div>
       <div className="footer-div"></div>
       <div className="footer-bottom">
-        <p>© 2026 Styloom. All rights reserved.</p>
-        <p>Fashion Intelligence · SS26</p>
+        <p>© Styloom Studio. All rights reserved.</p>
+        <p>Archival Portfolio</p>
       </div>
     </footer>
   );

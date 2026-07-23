@@ -29,7 +29,7 @@ export default function Connect() {
         <div className="banner-inner">
           <span className="banner-tag">05 / Connect</span>
           <h1 className="banner-title">Let's <em>Connect</em></h1>
-          <p className="banner-sub">Press, collaborations, editorial partnerships, or just a conversation about fashion.</p>
+          <p className="banner-sub">Project inquiries, creative direction, styling partnerships, or just a conversation about design.</p>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ export default function Connect() {
           <Reveal className="connect-left">
             <span className="sec-tag">— Get in Touch</span>
             <h2>We read<br /><em>every message.</em></h2>
-            <p>Whether you're a designer, a stylist, a journalist, or just someone who follows fashion closely — if you have something worth saying, we want to hear it. Styloom was built on the idea that the best intelligence comes from many perspectives.</p>
+            <p>Whether you're a designer, a brand, a photographer, or just someone who appreciates modern aesthetics — if you have a project in mind, we want to hear about it. Styloom Studio was built on the idea that the best design comes from collaboration.</p>
 
             <div className="connect-details">
               <div className="cdet">
@@ -47,11 +47,11 @@ export default function Connect() {
               </div>
               <div className="cdet">
                 <i className="ri-mail-line"></i>
-                <div><h4>Editorial</h4><p>edit@styloom.fashion</p></div>
+                <div><h4>Studio Inquiries</h4><p>studio@styloom.fashion</p></div>
               </div>
               <div className="cdet">
-                <i className="ri-newspaper-line"></i>
-                <div><h4>Press</h4><p>press@styloom.fashion</p></div>
+                <i className="ri-camera-lens-line"></i>
+                <div><h4>Production</h4><p>production@styloom.fashion</p></div>
               </div>
               <div className="cdet">
                 <i className="ri-time-line"></i>
@@ -78,7 +78,7 @@ export default function Connect() {
                 <div className="f-line"></div>
               </div>
               <div className="form-group">
-                <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subject — e.g. Press, Collaboration, Pitch, Other" autoComplete="off" />
+                <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subject — e.g. Project Inquiry, Styling, Other" autoComplete="off" />
                 <div className="f-line"></div>
               </div>
               <div className="form-group">
@@ -102,17 +102,17 @@ export default function Connect() {
       {/* TWO COL INFO */}
       <div style={{ background: 'var(--s0)', padding: '80px 60px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', borderTop: '1px solid var(--border)' }}>
         <Reveal style={{ background: 'var(--s2)', padding: '52px 44px', border: '1px solid var(--border)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', letterSpacing: '3px', textTransform: 'uppercase', color: 'var(--accent)', display: 'block', marginBottom: '16px' }}>✦ Press &amp; Media</span>
-          <h3 style={{ fontFamily: 'var(--font-disp)', fontSize: 'clamp(20px, 2.5vw, 34px)', fontWeight: 600, color: 'var(--t1)', lineHeight: 1.15, marginBottom: '16px' }}>For media<br /><em style={{ fontStyle: 'italic', color: 'var(--t2)' }}>enquiries.</em></h3>
-          <p style={{ fontSize: '13.5px', lineHeight: 1.8, color: 'var(--t2)', marginBottom: '24px' }}>Lookbook access, interview requests, image usage, and editorial partnerships — contact our press team directly. We respond to all press enquiries within one business day.</p>
-          <a href="mailto:press@styloom.fashion" style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--accent)', display: 'inline-flex', alignItems: 'center', gap: '7px', borderBottom: '1px solid rgba(255, 69, 0, .35)', paddingBottom: '3px' }}>press@styloom.fashion <i className="ri-arrow-right-line"></i></a>
+          <span style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', letterSpacing: '3px', textTransform: 'uppercase', color: 'var(--accent)', display: 'block', marginBottom: '16px' }}>✦ Client Inquiries</span>
+          <h3 style={{ fontFamily: 'var(--font-disp)', fontSize: 'clamp(20px, 2.5vw, 34px)', fontWeight: 600, color: 'var(--t1)', lineHeight: 1.15, marginBottom: '16px' }}>For potential<br /><em style={{ fontStyle: 'italic', color: 'var(--t2)' }}>projects.</em></h3>
+          <p style={{ fontSize: '13.5px', lineHeight: 1.8, color: 'var(--t2)', marginBottom: '24px' }}>Creative direction, campaign styling, brand consultation, and aesthetic strategy — contact our studio directly. We respond to all new client inquiries within one business day.</p>
+          <a href="mailto:studio@styloom.fashion" style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--accent)', display: 'inline-flex', alignItems: 'center', gap: '7px', borderBottom: '1px solid rgba(255, 69, 0, .35)', paddingBottom: '3px' }}>studio@styloom.fashion <i className="ri-arrow-right-line"></i></a>
         </Reveal>
         
         <Reveal className="d1" style={{ background: 'rgba(255, 69, 0, .05)', padding: '52px 44px', border: '1px solid rgba(255, 69, 0, .15)' }}>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', letterSpacing: '3px', textTransform: 'uppercase', color: 'var(--accent)', display: 'block', marginBottom: '16px' }}>✦ Collaborations</span>
           <h3 style={{ fontFamily: 'var(--font-disp)', fontSize: 'clamp(20px, 2.5vw, 34px)', fontWeight: 600, color: 'var(--t1)', lineHeight: 1.15, marginBottom: '16px' }}>Work with<br /><em style={{ fontStyle: 'italic', color: 'var(--t2)' }}>STYLOOM.</em></h3>
-          <p style={{ fontSize: '13.5px', lineHeight: 1.8, color: 'var(--t2)', marginBottom: '24px' }}>We collaborate with designers, photographers, studios, and other editorial platforms on projects that advance the conversation about fashion. If you have an idea that fits, we'd like to hear it.</p>
-          <a href="mailto:edit@styloom.fashion" style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--accent)', display: 'inline-flex', alignItems: 'center', gap: '7px', borderBottom: '1px solid rgba(255, 69, 0, .35)', paddingBottom: '3px' }}>edit@styloom.fashion <i className="ri-arrow-right-line"></i></a>
+          <p style={{ fontSize: '13.5px', lineHeight: 1.8, color: 'var(--t2)', marginBottom: '24px' }}>We regularly collaborate with independent designers, photographers, and other creative studios on projects that advance modern design. If you have an idea that fits, we'd like to hear it.</p>
+          <a href="mailto:production@styloom.fashion" style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--accent)', display: 'inline-flex', alignItems: 'center', gap: '7px', borderBottom: '1px solid rgba(255, 69, 0, .35)', paddingBottom: '3px' }}>production@styloom.fashion <i className="ri-arrow-right-line"></i></a>
         </Reveal>
       </div>
     </TransitionWrapper>

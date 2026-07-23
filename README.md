@@ -1,6 +1,6 @@
-# Styloom — Fashion Intelligence
+# Styloom Studio — Archival Portfolio
 
-**Styloom** is a premium, high-performance web application designed for fashion intelligence, trend forecasting, and editorial analysis. Built for those who want to understand the season before it happens.
+**Styloom** is a premium, high-performance web application. Designed as a conceptual fashion styling studio, it showcases "past work", design philosophy, and campaigns. It is built as a complete, static showcase piece delivering an exceptionally high-end user experience.
 
 ## Tech Stack
 

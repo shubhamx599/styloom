@@ -53,9 +53,9 @@ export default function Header() {
   // Reusable NavLink block
   const navLinks = [
     { to: "/", label: "Home" },
-    { to: "/collections", label: "The Season" },
-    { to: "/runway", label: "Runway" },
-    { to: "/journal", label: "Journal" },
+    { to: "/collections", label: "Collections" },
+    { to: "/runway", label: "Campaigns" },
+    { to: "/journal", label: "Process" },
     { to: "/about", label: "About" },
     { to: "/connect", label: "Connect" },
   ];
@@ -68,14 +68,11 @@ export default function Header() {
             {/* Repeated twice for infinite scroll illusion */}
             {[...Array(2)].map((_, idx) => (
               <span key={idx} className="contents">
-                <span>SS26 Now Showing</span><span className="msep">✦</span>
-                <span>Milan</span><span className="msep">✦</span>
-                <span>Paris</span><span className="msep">✦</span>
-                <span>New York</span><span className="msep">✦</span>
-                <span>London</span><span className="msep">✦</span>
-                <span>Tokyo</span><span className="msep">✦</span>
-                <span>New Delhi</span><span className="msep">✦</span>
-                <span>Styloom Intelligence — Issue 01 · 2026</span><span className="msep">✦</span>
+                <span>Form</span><span className="msep">✦</span>
+                <span>Function</span><span className="msep">✦</span>
+                <span>Fabric</span><span className="msep">✦</span>
+                <span>Styloom Studio</span><span className="msep">✦</span>
+                <span>Archival Works</span><span className="msep">✦</span>
               </span>
             ))}
           </div>
@@ -103,7 +100,7 @@ export default function Header() {
             <button id="theme-toggle" aria-label="Toggle theme" onClick={toggleTheme}>
               <i id="theme-icon" className={theme === 'dark' ? 'ri-sun-line' : 'ri-moon-line'}></i>
             </button>
-            <Link to="/collections" id="nav-cta">The Season</Link>
+            <Link to="/collections" id="nav-cta">Collections</Link>
             <div id="nav-hamburger" onClick={() => setIsMobileOpen(true)}>
               <i className="ri-menu-3-fill"></i>
             </div>
@@ -126,7 +123,7 @@ export default function Header() {
             </NavLink>
           ))}
         </div>
-        <div id="mob-foot">© 2026 Styloom · The shape of what's next.</div>
+        <div id="mob-foot">© Styloom Studio · Archival Portfolio</div>
       </div>
     </>
   );
