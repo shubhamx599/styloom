@@ -62,15 +62,11 @@ export default function Home() {
 
         <div id="hero-right">
           <div id="hero-video-frame">
-            <motion.video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline 
-              style={{ y: videoY }}
-            >
-              <source src="https://assets.mixkit.co/videos/preview/mixkit-girl-in-a-fashion-photoshoot-4228-large.mp4" type="video/mp4" />
-            </motion.video>
+            <motion.div style={{ width: '100%', height: '100%', y: videoY }}>
+              <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+              </video>
+            </motion.div>
             <div id="vid-top">Styloom Studio</div>
             <div id="vid-bot">
               <span>Editorial</span>
