@@ -7,7 +7,7 @@ import AnimatedCounter from '../components/AnimatedCounter';
 import { useScramble } from '../utils/useScramble';
 
 export default function Home() {
-  const scrambledTag = useScramble("Contour / SS26 · Issue 01", 350);
+  const scrambledTag = useScramble("Styloom / SS26 · Issue 01", 350);
   
   // Parallax for hero video
   const { scrollY } = useScroll();
@@ -71,7 +71,7 @@ export default function Home() {
             >
               <source src="https://videos.pexels.com/video-files/3571264/3571264-hd_1920_1080_24fps.mp4" type="video/mp4" />
             </motion.video>
-            <div id="vid-top">Contour · SS26</div>
+            <div id="vid-top">Styloom · SS26</div>
             <div id="vid-bot">
               <span>Editorial</span>
               <span>© 2026</span>
@@ -84,13 +84,13 @@ export default function Home() {
       {/* TREND STRIP */}
       <div className="trend-strip">
         <div className="trend-track">
-          <span>Contour</span><span className="acc">✦</span>
+          <span>Styloom</span><span className="acc">✦</span>
           <span>The Shape of What's Next</span><span className="acc">✦</span>
           <span>SS26</span><span className="acc">✦</span>
           <span>Fashion Intelligence</span><span className="acc">✦</span>
           <span>Trend Forecasting</span><span className="acc">✦</span>
           <span>Editorial Direction</span><span className="acc">✦</span>
-          <span>Contour</span><span className="acc">✦</span>
+          <span>Styloom</span><span className="acc">✦</span>
           <span>The Shape of What's Next</span><span className="acc">✦</span>
           <span>SS26</span><span className="acc">✦</span>
           <span>Fashion Intelligence</span><span className="acc">✦</span>
@@ -155,7 +155,7 @@ export default function Home() {
           It is <em>how the world reads you</em><br />
           before you speak."
         </blockquote>
-        <cite>— Contour Editorial, Issue 01 · 2026</cite>
+        <cite>— Styloom Editorial, Issue 01 · 2026</cite>
       </Reveal>
 
       {/* SEASON INTELLIGENCE */}
@@ -164,7 +164,7 @@ export default function Home() {
           <Reveal className="si-left">
             <span className="sec-tag">— 02 / Intelligence</span>
             <h2>We don't follow<br /><em>fashion.</em><br />We read it.</h2>
-            <p>CONTOUR is a fashion intelligence platform built for those who want to understand the season before it happens. Trend forecasting, editorial analysis, and runway decoding — all in one place.</p>
+            <p>STYLOOM is a fashion intelligence platform built for those who want to understand the season before it happens. Trend forecasting, editorial analysis, and runway decoding — all in one place.</p>
             <p>We track what the industry signals, translate what it means, and tell you what comes next.</p>
             <Link to="/about" className="btn-ghost" style={{ marginTop: '16px' }}>What We Do <i className="ri-arrow-right-line"></i></Link>
           </Reveal>
@@ -184,7 +184,7 @@ export default function Home() {
               </div>
             </div>
             <div className="si-img">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=85" alt="Contour Intelligence" />
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=85" alt="Styloom Intelligence" />
               <div className="si-badge">Est. 2020</div>
             </div>
           </Reveal>

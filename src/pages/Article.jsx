@@ -22,7 +22,7 @@ export default function Article() {
           </div>
           <div className="art-byline-text">
             <p>Priya Nair</p>
-            <p>Head of Trend Intelligence · Contour</p>
+            <p>Head of Trend Intelligence · Styloom</p>
           </div>
         </Reveal>
       </div>
@@ -31,7 +31,7 @@ export default function Article() {
         <Reveal className="art-body-img">
           <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1600&q=90" alt="Quiet Luxury SS26" />
         </Reveal>
-        <p className="art-img-caption">SS26 Editorial — Contour · 2026</p>
+        <p className="art-img-caption">SS26 Editorial — Styloom · 2026</p>
 
         <Reveal className="art-p" as="p">
           The first time quiet luxury appeared as a recognisable trend — sometime around 2022, picked up by fashion media around 2023 — it was easy to read. It was a reaction. Maximalism had gone too far, logomania had exhausted itself, and a significant portion of the fashion-aware public was tired of being shouted at by clothing.
@@ -88,7 +88,7 @@ export default function Article() {
         <Reveal className="art-body-img">
           <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1600&q=90" alt="Quiet Luxury Detail" />
         </Reveal>
-        <p className="art-img-caption">Construction detail — SS26 Capsule · Contour</p>
+        <p className="art-img-caption">Construction detail — SS26 Capsule · Styloom</p>
 
         <Reveal className="art-h2" as="h2">
           What This Means for <em>AW26</em>
@@ -108,7 +108,7 @@ export default function Article() {
 
         <div className="art-divider"></div>
         <Reveal className="art-p" as="p" style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--t3)' }}>
-          Analysis by Priya Nair · Contour Intelligence · Issue 01 · May 2026
+          Analysis by Priya Nair · Styloom Intelligence · Issue 01 · May 2026
         </Reveal>
       </div>
 
@@ -130,7 +130,7 @@ export default function Article() {
           </Reveal>
           <Reveal className="jrn-card d1">
             <div className="jrn-img"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="AW26" /><span className="jrn-cat">Forecast</span></div>
-            <div className="jrn-body"><p className="jrn-meta">March 2026 · 10 min</p><h3>AW26 Forecast: Ten Signals</h3><p>What CONTOUR is watching heading into Autumn.</p><Link to="/journal/article" className="jrn-read">Read <i className="ri-arrow-right-line"></i></Link></div>
+            <div className="jrn-body"><p className="jrn-meta">March 2026 · 10 min</p><h3>AW26 Forecast: Ten Signals</h3><p>What STYLOOM is watching heading into Autumn.</p><Link to="/journal/article" className="jrn-read">Read <i className="ri-arrow-right-line"></i></Link></div>
           </Reveal>
           <Reveal className="jrn-card d2">
             <div className="jrn-img"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Monochrome" /><span className="jrn-cat">Trend</span></div>

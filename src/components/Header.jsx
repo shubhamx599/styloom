@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
-  const [theme, setTheme] = useState(localStorage.getItem('contour-theme') || 'dark');
+  const [theme, setTheme] = useState(localStorage.getItem('styloom-theme') || 'dark');
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isTransparent, setIsTransparent] = useState(true);
   const location = useLocation();
@@ -10,7 +10,7 @@ export default function Header() {
   // Handle theme toggle
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('contour-theme', theme);
+    localStorage.setItem('styloom-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
@@ -75,7 +75,7 @@ export default function Header() {
                 <span>London</span><span className="msep">✦</span>
                 <span>Tokyo</span><span className="msep">✦</span>
                 <span>New Delhi</span><span className="msep">✦</span>
-                <span>Contour Intelligence — Issue 01 · 2026</span><span className="msep">✦</span>
+                <span>Styloom Intelligence — Issue 01 · 2026</span><span className="msep">✦</span>
               </span>
             ))}
           </div>
@@ -84,7 +84,7 @@ export default function Header() {
         <nav id="main-nav" className={isTransparent ? 'transparent' : ''}>
           <Link to="/" id="nav-logo">
             <div className="logo-diamond"></div>
-            <span className="logo-word">Contour</span>
+            <span className="logo-word">Styloom</span>
           </Link>
 
           <div id="nav-links">
@@ -126,7 +126,7 @@ export default function Header() {
             </NavLink>
           ))}
         </div>
-        <div id="mob-foot">© 2026 Contour · The shape of what's next.</div>
+        <div id="mob-foot">© 2026 Styloom · The shape of what's next.</div>
       </div>
     </>
   );

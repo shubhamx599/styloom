@@ -9,7 +9,7 @@ const values = [
   { num: '03', title: 'Perspective', desc: 'Fashion means different things in different cities. Our intelligence is built from 40+ cities globally, because the same silhouette reads differently in Delhi than it does in Paris.', delay: 0.2 },
   { num: '04', title: 'Independence', desc: 'We are not affiliated with any label, brand, or house. Our analysis serves the reader — not the industry. We call what we see, not what we\'re paid to say.', delay: 0 },
   { num: '05', title: 'Longevity', desc: 'We are not interested in what is trending this week. We are interested in what will matter next season — and the one after that. Real fashion intelligence is never short-term.', delay: 0.1 },
-  { num: '06', title: 'Access', desc: 'The best fashion intelligence should not require industry credentials to access. CONTOUR was built to give serious readers — wherever they are — the same depth as an industry insider.', delay: 0.2 },
+  { num: '06', title: 'Access', desc: 'The best fashion intelligence should not require industry credentials to access. STYLOOM was built to give serious readers — wherever they are — the same depth as an industry insider.', delay: 0.2 },
 ];
 
 const team = [
@@ -35,14 +35,14 @@ export default function About() {
           <Reveal className="story-left">
             <span className="sec-tag">— The Origin</span>
             <h2>We don't predict<br /><em>trends.</em><br />We decode them.</h2>
-            <p>CONTOUR was built in 2020 out of frustration. Fashion was happening everywhere — on runways, on streets, in studios — but the intelligence behind it was locked inside industry circles most people couldn't access.</p>
+            <p>STYLOOM was built in 2020 out of frustration. Fashion was happening everywhere — on runways, on streets, in studios — but the intelligence behind it was locked inside industry circles most people couldn't access.</p>
             <p>We set out to change that. To build a platform that reads the season, translates the runway, and tells the story of what fashion is actually doing — and why.</p>
-            <p>The name "Contour" is deliberate. A contour is an outline — the shape of something before you can see its full form. That's what we do: we show you the shape of what's next before everyone else can see it.</p>
+            <p>The name "Styloom" is deliberate. A styloom is an outline — the shape of something before you can see its full form. That's what we do: we show you the shape of what's next before everyone else can see it.</p>
             <Link to="/collections" className="btn-ghost" style={{ marginTop: '16px' }}>Explore SS26 <i className="ri-arrow-right-line"></i></Link>
           </Reveal>
           <Reveal className="story-right d1" delay={0.15}>
             <div className="story-img-main">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=85" alt="Contour Studio" />
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=85" alt="Styloom Studio" />
             </div>
             <div className="story-badge"><h3>2020</h3><p>Founded</p></div>
           </Reveal>

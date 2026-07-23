@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <div className="footer-brand">
             <div className="footer-diamond"></div>
-            <span className="footer-wordmark">Contour</span>
+            <span className="footer-wordmark">Styloom</span>
           </div>
           <p className="footer-tagline">The shape of what's next. · Issue 01 · 2026</p>
         </div>
@@ -34,7 +34,7 @@ export default function Footer() {
       </div>
       <div className="footer-div"></div>
       <div className="footer-bottom">
-        <p>© 2026 Contour. All rights reserved.</p>
+        <p>© 2026 Styloom. All rights reserved.</p>
         <p>Fashion Intelligence · SS26</p>
       </div>
     </footer>
