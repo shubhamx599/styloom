@@ -64,7 +64,7 @@ export default function Home() {
           <div id="hero-video-frame">
             <motion.div style={{ width: '100%', height: '100%', y: videoY }}>
               <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
-                <source src="/hero.mp4" type="video/mp4" />
+                <source src="https://assets.mixkit.co/videos/44556/44556-720.mp4" type="video/mp4" />
               </video>
             </motion.div>
             <div id="vid-top">Styloom Studio</div>
