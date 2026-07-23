@@ -382,12 +382,14 @@ body.hero-in #hero-scroll { opacity:1; }
 @keyframes sPulse { 0%{top:-100%} 100%{top:200%} }
 #hero-scroll span { font-family:var(--font-mono); font-size:8px; letter-spacing:3.5px; text-transform:uppercase; color:var(--t3); writing-mode:vertical-rl; transform:rotate(180deg); }
 
-/* RIGHT â€” VIDEO */
+/* RIGHT — VIDEO */
 #hero-right {
-  flex:0 0 48%; position:relative; z-index:2; padding:24px 24px 24px 0;
-  display:flex; align-items:center; justify-content:center;
+  flex:0 0 48%; position:relative; z-index:2;
 }
-#hero-video-frame { width:100%; height:80%; position:relative; overflow:hidden; border-radius:4px; }
+#hero-video-frame {
+  position:absolute; top:10%; bottom:10%; left:0; right:24px;
+  overflow:hidden; border-radius:4px;
+}
 #hero-video-frame video { width:100%; height:100%; object-fit:cover; object-position:50% 15%; }
 #hero-video-frame::before { content:''; position:absolute; inset:0; background:linear-gradient(to right, rgba(6,6,6,.2), transparent 30%); z-index:1; pointer-events:none; }
 #vid-top { position:absolute; top:18px; left:18px; z-index:2; font-family:var(--font-mono); font-size:8.5px; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,.4); background:rgba(0,0,0,.35); padding:5px 10px; backdrop-filter:blur(8px); }
@@ -718,7 +720,7 @@ body.hero-in #hero-scroll { opacity:1; }
   #hero { flex-direction:column-reverse; height:auto; min-height:100svh; }
   #hero-left { flex:none; padding:var(--hdr-h) 22px 36px; }
   #hero-right { flex:none; height:52vw; min-height:240px; padding:0; display:block; }
-  #hero-video-frame { height:100%; border-radius:0; }
+  #hero-video-frame { position:relative; top:auto; bottom:auto; left:auto; right:auto; width:100%; height:100%; border-radius:0; }
   #hero-ghost, #hero-scroll { display:none; }
   #hero-bottom { flex-wrap:wrap; gap:22px; }
   #hero-desc { max-width:100%; }
