@@ -34,32 +34,38 @@ export default function CustomCursor() {
     window.addEventListener('mousemove', onMouseMove);
 
     // Ticker for the trailing ring effect
-    const ticker = gsap.ticker.add(() => {
+    const tick = () => {
       // Linear interpolation (lerp) for smooth trailing
       rx += (mx - rx) * 0.15;
       ry += (my - ry) * 0.15;
       setRingX(rx);
       setRingY(ry);
-    });
+    };
+    gsap.ticker.add(tick);
 
-    // Handle hover states for the ring expansion
-    const interactables = document.querySelectorAll('a, button, .magnetic, .ed-item, .fw-card, .jrn-card');
+    // Handle hover states for the ring expansion using event delegation
+    const interactSelector = 'a, button, .magnetic, .ed-item, .fw-card, .jrn-card';
     
-    const onEnter = () => document.body.classList.add('cur-hover');
-    const onLeave = () => document.body.classList.remove('cur-hover');
+    const onMouseOver = (e) => {
+      if (e.target.closest(interactSelector)) {
+        document.body.classList.add('cur-hover');
+      }
+    };
+    
+    const onMouseOut = (e) => {
+      if (e.target.closest(interactSelector)) {
+        document.body.classList.remove('cur-hover');
+      }
+    };
 
-    interactables.forEach(el => {
-      el.addEventListener('mouseenter', onEnter);
-      el.addEventListener('mouseleave', onLeave);
-    });
+    window.addEventListener('mouseover', onMouseOver);
+    window.addEventListener('mouseout', onMouseOut);
 
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
-      gsap.ticker.remove(ticker);
-      interactables.forEach(el => {
-        el.removeEventListener('mouseenter', onEnter);
-        el.removeEventListener('mouseleave', onLeave);
-      });
+      gsap.ticker.remove(tick);
+      window.removeEventListener('mouseover', onMouseOver);
+      window.removeEventListener('mouseout', onMouseOut);
     };
   }, []);
 
