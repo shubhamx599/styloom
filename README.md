@@ -52,8 +52,5 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
    npm run build
    ```
 
-## Legacy Files
-The original HTML/CSS version of this project is preserved in the `_legacy` folder for historical reference and asset fallback.
-
 ## License
 © 2026 Styloom. All rights reserved.
