@@ -124,17 +124,17 @@ export default function Article() {
           <div className="sec-line"></div>
         </Reveal>
         <div className="related-grid">
-          <Reveal className="jrn-card">
-            <div className="jrn-img"><img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80" alt="Silhouette" /><span className="jrn-cat">Case Study</span></div>
-            <div className="jrn-body"><p className="jrn-meta">Case Study · 6 min</p><h3>The Silhouette That Defined the Era</h3><p>Six campaigns, one shape, no coordination.</p><Link to="/journal/article" className="jrn-read">Read <i className="ri-arrow-right-line"></i></Link></div>
+          <Reveal className="journal-card">
+            <div className="journal-image"><img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80" alt="Silhouette" /><span className="journal-category">Case Study</span></div>
+            <div className="journal-body"><p className="journal-meta">Case Study · 6 min</p><h3>The Silhouette That Defined the Era</h3><p>Six campaigns, one shape, no coordination.</p><Link to="/journal/article" className="journal-read-link">Read <i className="ri-arrow-right-line"></i></Link></div>
           </Reveal>
-          <Reveal className="jrn-card d1">
-            <div className="jrn-img"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="AW26" /><span className="jrn-cat">Process</span></div>
-            <div className="jrn-body"><p className="jrn-meta">Process · 10 min</p><h3>Building the Foundation</h3><p>What Styloom watches when establishing an aesthetic.</p><Link to="/journal/article" className="jrn-read">Read <i className="ri-arrow-right-line"></i></Link></div>
+          <Reveal className="journal-card delay-1">
+            <div className="journal-image"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="AW26" /><span className="journal-category">Process</span></div>
+            <div className="journal-body"><p className="journal-meta">Process · 10 min</p><h3>Building the Foundation</h3><p>What Styloom watches when establishing an aesthetic.</p><Link to="/journal/article" className="journal-read-link">Read <i className="ri-arrow-right-line"></i></Link></div>
           </Reveal>
-          <Reveal className="jrn-card d2">
-            <div className="jrn-img"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Monochrome" /><span className="jrn-cat">Philosophy</span></div>
-            <div className="jrn-body"><p className="jrn-meta">Philosophy · 5 min</p><h3>Monochrome Is Not Boring.</h3><p>You're just reading it wrong.</p><Link to="/journal/article" className="jrn-read">Read <i className="ri-arrow-right-line"></i></Link></div>
+          <Reveal className="journal-card delay-2">
+            <div className="journal-image"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Monochrome" /><span className="journal-category">Philosophy</span></div>
+            <div className="journal-body"><p className="journal-meta">Philosophy · 5 min</p><h3>Monochrome Is Not Boring.</h3><p>You're just reading it wrong.</p><Link to="/journal/article" className="journal-read-link">Read <i className="ri-arrow-right-line"></i></Link></div>
           </Reveal>
         </div>
       </section>

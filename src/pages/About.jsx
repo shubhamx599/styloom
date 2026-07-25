@@ -40,7 +40,7 @@ export default function About() {
             <p>The name "Styloom" represents the loom of style — the structural framework upon which true aesthetic vision is woven. That is what we do: we build the foundation.</p>
             <Link to="/collections" className="btn-ghost" style={{ marginTop: '16px' }}>Explore Archives <i className="ri-arrow-right-line"></i></Link>
           </Reveal>
-          <Reveal className="story-right d1" delay={0.15}>
+          <Reveal className="story-right delay-1" delay={0.15}>
             <div className="story-img-main">
               <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=85" alt="Styloom Studio" />
             </div>
@@ -50,19 +50,19 @@ export default function About() {
       </section>
 
       <div id="about-stats">
-        <Reveal className="astat" delay={0}>
+        <Reveal className="about-stat" delay={0}>
           <AnimatedCounter value={6} suffix="+" />
           <p>Years active</p>
         </Reveal>
-        <Reveal className="astat" delay={0.1}>
+        <Reveal className="about-stat" delay={0.1}>
           <AnimatedCounter value={200} suffix="+" />
           <p>Campaigns styled</p>
         </Reveal>
-        <Reveal className="astat" delay={0.2}>
+        <Reveal className="about-stat" delay={0.2}>
           <AnimatedCounter value={40} suffix="+" />
           <p>Global clients</p>
         </Reveal>
-        <Reveal className="astat" delay={0.3}>
+        <Reveal className="about-stat" delay={0.3}>
           <AnimatedCounter value={12} suffix="" />
           <p>Design awards</p>
         </Reveal>
@@ -76,8 +76,8 @@ export default function About() {
         </Reveal>
         <div className="values-grid">
           {values.map((v, i) => (
-            <Reveal key={i} className={`val-item ${v.delay > 0 ? `d${v.delay * 10}` : ''}`} delay={v.delay}>
-              <div className="val-num">{v.num}</div>
+            <Reveal key={i} className={`value-item ${v.delay > 0 ? `d${v.delay * 10}` : ''}`} delay={v.delay}>
+              <div className="value-number">{v.num}</div>
               <h3>{v.title}</h3>
               <p>{v.desc}</p>
             </Reveal>
