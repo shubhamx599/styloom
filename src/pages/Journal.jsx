@@ -51,7 +51,7 @@ export default function Journal() {
           {['all', 'philosophy', 'case-study', 'process', 'interview'].map(f => (
             <button 
               key={f} 
-              className={`jfilt-btn ${filter === f ? 'active' : ''}`}
+              className={`journal-filter-btn ${filter === f ? 'active' : ''}`}
               onClick={() => setFilter(f)}
             >
               {f.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
@@ -59,7 +59,7 @@ export default function Journal() {
           ))}
         </Reveal>
 
-        <motion.div layout className="jrn-full-grid">
+        <motion.div layout className="journal-full-grid">
           <AnimatePresence>
             {filteredArticles.map(art => (
               <motion.article 
@@ -69,17 +69,17 @@ export default function Journal() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="jrn-card"
+                className="journal-card"
               >
-                <div className="jrn-img">
+                <div className="journal-image">
                   <img src={art.img} alt={art.title} />
-                  <span className="jrn-cat">{art.cat.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</span>
+                  <span className="journal-category">{art.cat.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</span>
                 </div>
-                <div className="jrn-body">
-                  <p className="jrn-meta">{art.meta}</p>
+                <div className="journal-body">
+                  <p className="journal-meta">{art.meta}</p>
                   <h3>{art.title}</h3>
                   <p>{art.desc}</p>
-                  <Link to={art.link} className="jrn-read">Read <i className="ri-arrow-right-line"></i></Link>
+                  <Link to={art.link} className="journal-read-link">Read <i className="ri-arrow-right-line"></i></Link>
                 </div>
               </motion.article>
             ))}
@@ -87,33 +87,19 @@ export default function Journal() {
         </motion.div>
       </section>
 
-      {/* Inline Newsletter Block */}
-      <Reveal 
-        style={{
-          background: 'var(--s2)', 
-          padding: '80px 60px', 
-          display: 'flex', 
-          alignItems: 'center', 
-          justifyContent: 'space-between', 
-          gap: '40px', 
-          flexWrap: 'wrap', 
-          borderTop: '1px solid var(--border)', 
-          borderBottom: '1px solid var(--border)'
-        }}
-      >
+      {/* Newsletter Block */}
+      {/* 
+        We use a standalone newsletter block to capture intent. 
+        Inline styles were extracted to index.css for cleaner component logic and easier maintenance.
+      */}
+      <Reveal className="newsletter-block">
         <div>
-          <span style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', letterSpacing: '3px', textTransform: 'uppercase', color: 'var(--accent)', display: 'block', marginBottom: '12px' }}>✦ Studio Notes</span>
-          <h2 style={{ fontFamily: 'var(--font-disp)', fontSize: 'clamp(22px, 3.2vw, 42px)', fontWeight: 600, color: 'var(--t1)', lineHeight: 1.1 }}>Create less.<br /><em style={{ fontStyle: 'italic', color: 'var(--accent)' }}>Mean more.</em></h2>
+          <span className="newsletter-tag">✦ Studio Notes</span>
+          <h2 className="newsletter-title">Create less.<br /><em>Mean more.</em></h2>
         </div>
-        <div style={{ display: 'flex', gap: 0, maxWidth: '400px', width: '100%', flex: '0 0 auto' }}>
-          <input type="email" placeholder="Your email" style={{ flex: 1, background: 'var(--s3)', border: '1px solid var(--border)', borderRight: 'none', padding: '15px 18px', fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--t1)', outline: 'none', minWidth: 0 }} />
-          <button 
-            style={{ background: 'var(--accent)', color: '#fff', border: 'none', padding: '15px 22px', fontFamily: 'var(--font-mono)', fontSize: '9.5px', letterSpacing: '2px', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'background .2s' }}
-            onMouseEnter={(e) => e.target.style.background = '#cc3700'}
-            onMouseLeave={(e) => e.target.style.background = 'var(--accent)'}
-          >
-            Subscribe
-          </button>
+        <div className="newsletter-form">
+          <input type="email" placeholder="Your email" className="newsletter-input" />
+          <button className="newsletter-btn">Subscribe</button>
         </div>
       </Reveal>
     </TransitionWrapper>
