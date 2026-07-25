@@ -7,7 +7,8 @@ export default function Header() {
   const [isTransparent, setIsTransparent] = useState(true);
   const location = useLocation();
 
-  // Handle theme toggle
+  // Sync theme with the DOM and persist user preference.
+  // We use data-theme on the root element to drive CSS variable resolution.
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('styloom-theme', theme);
@@ -17,11 +18,13 @@ export default function Header() {
     setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  // Handle scroll for transparent nav
+  // Calculate when the navigation bar should lose its transparency.
+  // This depends on whether we are on the homepage (with the hero banner) or an inner page.
   useEffect(() => {
     const isInnerPage = location.pathname !== '/';
     
     const handleScroll = () => {
+      // Inner pages always require a solid background for readability.
       if (isInnerPage) {
         setIsTransparent(false);
         return;
@@ -29,10 +32,11 @@ export default function Header() {
       
       const heroEl = document.getElementById('hero');
       if (heroEl) {
+        // Transition to solid once the user scrolls past the hero section.
         const past = window.scrollY > heroEl.offsetTop + heroEl.offsetHeight - 80;
         setIsTransparent(!past);
       } else {
-        // Fallback if hero isn't found immediately
+        // Graceful fallback in case the hero element hasn't mounted yet.
         setIsTransparent(window.scrollY < 100);
       }
     };
@@ -43,7 +47,8 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [location.pathname]);
 
-  // Lock body scroll when mobile menu is open
+  // Prevent background scrolling when the mobile menu is open.
+  // This avoids the common bug where users can scroll the page underneath the modal.
   useEffect(() => {
     document.body.style.overflow = isMobileOpen ? 'hidden' : '';
   }, [isMobileOpen]);
@@ -65,14 +70,18 @@ export default function Header() {
       <header id="site-header">
         <div id="top-bar">
           <div id="marquee-track">
-            {/* Repeated twice for infinite scroll illusion */}
+            {/* 
+              We duplicate the items twice to create an infinite, seamless scrolling effect.
+              When the first block finishes scrolling out of view, the second block seamlessly follows, 
+              and the animation resets perfectly.
+            */}
             {[...Array(2)].map((_, idx) => (
               <span key={idx} className="contents">
-                <span>Form</span><span className="msep">✦</span>
-                <span>Function</span><span className="msep">✦</span>
-                <span>Fabric</span><span className="msep">✦</span>
-                <span>Styloom Studio</span><span className="msep">✦</span>
-                <span>Archival Works</span><span className="msep">✦</span>
+                {["Form", "Function", "Fabric", "Styloom Studio", "Archival Works"].map((word, i) => (
+                  <span key={i} className="contents">
+                    <span>{word}</span><span className="marquee-separator">✦</span>
+                  </span>
+                ))}
               </span>
             ))}
           </div>
