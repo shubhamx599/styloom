@@ -22,8 +22,8 @@ export default function Runway() {
       </div>
 
       <section id="runway-intro">
-        <div className="rint-grid">
-          <Reveal className="rint-left">
+        <div className="runway-intro-grid">
+          <Reveal className="runway-intro-left">
             <span className="sec-tag">— Our Work</span>
             <h2>Our styling<br /><em>is a language.</em><br />We translate it.</h2>
             <p>Every campaign sends a message — through silhouette, fabric, proportion, and mood. Most people see the clothes. We build what's underneath: the cultural signal, the directional shift, the visual foundation.</p>
@@ -31,9 +31,9 @@ export default function Runway() {
             <Link to="/collections" className="btn-ghost" style={{ marginTop: '28px' }}>View Collections <i className="ri-arrow-right-line"></i></Link>
           </Reveal>
           
-          <Reveal className="rint-imgs d1" delay={0.15}>
+          <Reveal className="runway-intro-images delay-1" delay={0.15}>
             {cities.slice(0, 4).map((city) => (
-              <div key={city.id} className="rint-img">
+              <div key={city.id} className="runway-intro-image">
                 <img src={city.img.replace('w=1000', 'w=500')} alt={`${city.name} Campaign`} />
               </div>
             ))}

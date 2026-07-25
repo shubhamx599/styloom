@@ -44,7 +44,7 @@ export default function TheSeason() {
           ))}
         </Reveal>
 
-        <motion.div layout className="ed-full-grid">
+        <motion.div layout className="editorial-full-grid">
           <AnimatePresence>
             {filteredEditorials.map(ed => (
               <motion.div 
@@ -54,15 +54,15 @@ export default function TheSeason() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="ed-full-item"
+                className="editorial-full-item"
               >
-                <div className="ed-item">
-                  <div className="ed-img">
+                <div className="editorial-item">
+                  <div className="editorial-image">
                     <img src={ed.img} alt={ed.title} />
-                    <div className="ed-info">
-                      <p className="ed-season">{ed.season}</p>
+                    <div className="editorial-info">
+                      <p className="editorial-season">{ed.season}</p>
                       <h3>{ed.title}</h3>
-                      <Link to="#" className="ed-link">View Project <i className="ri-arrow-right-line"></i></Link>
+                      <Link to="#" className="editorial-link">View Project <i className="ri-arrow-right-line"></i></Link>
                     </div>
                   </div>
                 </div>
